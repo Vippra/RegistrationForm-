@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="RegistrationForm_._default" %>
+<%@ Register Src="~/header.ascx" TagName="myhead" TagPrefix="aa" %>
+<%@ Register Src="~/footer.ascx" TagName="myfoot" TagPrefix="bb" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table>
+                <tr>
+                    <tb>
+                        <aa:myhead id="h1" runat="server"></aa:myhead>
+                    </tb>
+                </tr>
+            
+                <tr>
+                    <tb>
+                        
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                       </asp:ContentPlaceHolder>
+                    </tb>
+                </tr>
+           
+                <tr>
+                    <tb>
+                        <bb:myfoot id="f1" runat="server"></bb:myfoot>
+                    </tb>
+                </tr>
+            </table>
+
+
+        </div>
+    </form>
+</body>
+</html>
